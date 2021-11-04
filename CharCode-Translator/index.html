@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>HackingVila CharCode Translator</title>
+<META NAME="DESCRIPTION" CONTENT="Encoder And Decoder">
+<META NAME="KEYWORDS" CONTENT="java, script, javascript, examples, source, code, forms, games">
+<META NAME="AUTHOR" CONTENT="HackingVila's Web Site Designs">
+<meta http-equiv="imagetoolbar" content="no">
+<script type="text/javascript">
+function stopErrors() {
+ return true;
+}
+window.onerror = stopErrors;
+</script>
+<link rel=stylesheet type=text/css href="style/hs.css">
+<script type="text/javascript">
+function selectAll(theField) {
+var tempval=eval("document."+theField)
+tempval.focus()
+tempval.select()
+}
+//</script>
+<script type="text/javascript">
+defaultStatus = "HackingVila Website Designs"  
+</script>
+<script type="text/javascript"><!-- 
+
+function runFromCharCode()
+{
+	input = document.fromCharCode.input.value;
+	//alert(input);
+	output = eval("String.fromCharCode(" + input + ")");
+	//alert(output);
+	document.fromCharCode.output.value = output;
+}
+function runCharCodeAt()
+{
+	input = document.charCodeAt.input.value;
+	//alert(input);
+	output = "";
+	for(i=0; i<input.length; ++i)
+	{
+		if(output != "") output += ", ";
+		output += input.charCodeAt(i);
+	}
+	//alert(output);
+	document.charCodeAt.output.value = output;
+}
+</script>
+</head>
+<body background="https://media.giphy.com/media/fVY0d5fm6UnPG/giphy.gif"><div class='CenterDiv'>
+<div style="position: fixed; top: 75px; left: -225px; width: 600px; padding: 10px; font-size: 24px; text-align: center; color: white; font-family: 'trebuchet ms', verdana, arial, sans-serif;transform: rotate(-45deg);transform-origin: 50% 0px;-o-transform: rotate(-45deg); -o-transform-origin: 50% 0px;-moz-transform: rotate(-45deg); -moz-transform-origin: 50% 0px; -webkit-transform: rotate(-45deg); -webkit-transform-origin: 50% 0px; background-color:yellow ; border: 1px solid rgb(170, 170, 170); z-index: 9999; opacity: 10;"><a href="https://hackingvila.wordpress.com/" style="text-decoration:none;color:red;">HackingVila Hackers</a></div>
+</div>
+</body>
+<style>
+	center {
+	  background-image: url('https://media.giphy.com/media/fVY0d5fm6UnPG/giphy.gif');
+	}
+	</style>
+<center><h1>HackingVila Web</h1><h3>CharCode Translator</h3>Author: <a href="index.html">HackingVila</a></center>
+<blockquote><blockquote><center>Kid, don't threaten me. There are worse things than death and uh, I can do all of them!</blockquote></blockquote></center>
+<center>
+<br>
+<center><marquee behavior="scroll" direction="left" scrollamount="20" width="100%">
+<font 
+color="yellow" size="3">HackingVila Cyber Squard :: We are the Digital Army
+</font></marquee></center>
+<br>
+	<FORM NAME=fromCharCode>
+<TEXTAREA ROWS=7 COLS=60 NAME=input>72, 97, 99, 107, 105, 110, 103, 86, 105, 108, 97</TEXTAREA>
+<INPUT TYPE=Button VALUE=" fromCharCode() " onClick="runFromCharCode()">
+<TEXTAREA ROWS=7 COLS=60 NAME=output></TEXTAREA></FORM>
+<HR>
+<br>
+<center><marquee behavior="scroll" direction="right" scrollamount="20" width="100%">
+<font 
+color="#ff4800" size="3"> HackingVila Cyber Squard :: We are the Digital Army
+</font></marquee></center>
+<br>
+<FORM NAME=charCodeAt><TEXTAREA ROWS=7 COLS=60 NAME=input>We are Cyber Ninja(Aniket)</TEXTAREA>
+<INPUT TYPE=Button VALUE="  charCodeAt()  " onClick="runCharCodeAt()">
+<TEXTAREA ROWS=7 COLS=60 NAME=output></TEXTAREA></FORM>
+<br>
+<br>
+<br>
+<br>
+<HR>
+<form name=string>
+<TEXTAREA ROWS=1 COLS=85 NAME=input><script language=javascript>eval(String.fromCharCode("PLACE site HERE"))</script></TEXTAREA>
+<br>
+<center><marquee behavior="scroll" direction="right" scrollamount="80" scrolldelay="60" width="100%">
+<font 
+color="green" size="4">&#10156; &#10156; &#10156; &#10156; &#10156; &#10156; &#10156; &#10156; &#10156; &#10156; &#10156; &#10156; &#10156; &#10156; &#10156; &#10156; &#10156; &#10156; &#10156; &#10156;
+</font></marquee></center>
+<from name=string>
+	<h5>.js Script</h5>
+<TEXTAREA ROWS=1 COLS=80 NAME=INPUT>document.documentElement.innerHTML=String.fromCharCode(PLACE CHAR CODE HERE)</TEXTAREA>
+<br>
+<center><marquee behavior="scroll" direction="right" scrollamount="80" scrolldelay="60" width="100%">
+<font 
+color="red" size="4">&#10155; &#10155; &#10155; &#10155; &#10155; &#10155; &#10155; &#10155; &#10155; &#10155; &#10155; &#10155; &#10155; &#10155; &#10155; &#10155; &#10155; &#10155; &#10155; &#10155;
+</font></marquee></center>
+<from name=string>
+	<h5> XSS </h5>
+<TEXTAREA ROWS=1 COLS=60 NAME=INPUT><script Type="text/javascript" src="Your site here"></script></TEXTAREA>
+</form></center>
+<center>
+<a href="https://hackingvila.wordpress.com"><b><i>Goto my website</i></b></a></center><br><br>
+</HR>
+</INPUT>
+</FORM>
+</BODY>
+</HR>
+</from>
+</form>
+</INPUT>
+</HTML>
+
